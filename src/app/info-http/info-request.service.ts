@@ -4,7 +4,9 @@ import {environment} from '../../environments/environment';
 import {User} from '../user';
 import {Repository} from '../repository';
 
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
 export class InfoRequestService {
   user:User;
   repos=[];

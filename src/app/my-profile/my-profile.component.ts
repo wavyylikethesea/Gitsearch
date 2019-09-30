@@ -4,8 +4,8 @@ import {User} from '../user';
 import {Repository} from '../repository';
 import {InfoRequestService} from '../info-http/info-request.service';
 @Component({
-  selector: 'app-myprofile',
-  templateUrl: './myprofile.component.html',
+  selector: 'app-my-profile',
+  templateUrl: './my-profile.component.html',
   providers:[InfoRequestService],
   styleUrls: ['./my-profile.component.css']
 })
@@ -20,10 +20,10 @@ export class MyprofileComponent implements OnInit {
   }
   ngOnInit() {
    
-    this.infoService.infoRequest("anumasif");
+    this.infoService.infoRequest("wavyylikethesea");
     this.user=this.infoService.user;
 
-    this.infoService.repoRequest("anumasif");
+    this.infoService.repoRequest("wavyylikethesea");
     this.repos=this.infoService.repos;
   }
 
