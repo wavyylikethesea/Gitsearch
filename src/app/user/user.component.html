@@ -1,10 +1,8 @@
 <div class="container">
-    <!--row 1................................................  -->
     <div class="row">
-      <!-- 1st column -->
       <div class="col-md-3">
       </div>
-      <!-- 2nd column -->
+      
       <div class="col-md-6">
         <h1>Search User</h1>
         <div class="form-group">
@@ -32,12 +30,9 @@
       </div>
   
       </div>
-      <!-- 3rd column -->
       <div class="col-md-3">
       </div>
-      <!--end of row1  -->
     </div>
-    <!--row 2......................................................  -->
     <div class="row hidden" *ngIf="show1 == true">
       <div *ngFor="let repo of repos" class="col-md-3 repoColumn">
         <h3>Name: {{repo.repoName}}</h3>
@@ -47,7 +42,6 @@
         <p>Goto the github repository:<a href="{{repo.url}}">Click Here</a></p>
       </div>
     </div>
-  <!--end of row2  -->
   </div>
-  <!--  ///////////////////////////////////////////////////////////-->
+
   

@@ -1,15 +1,30 @@
 import { Component, OnInit } from '@angular/core';
-
+import {HttpClient} from '@angular/common/http';
+import {User} from '../user';
+import {Repository} from '../repository';
+import {InfoRequestService} from '../info-http/info-request.service';
 @Component({
-  selector: 'app-my-profile',
-  templateUrl: './my-profile.component.html',
-  styleUrls: ['./my-profile.component.css']
+  selector: 'app-myprofile',
+  templateUrl: './myprofile.component.html',
+  providers:[InfoRequestService],
+  styleUrls: ['./myprofile.component.css']
 })
-export class MyProfileComponent implements OnInit {
+export class MyprofileComponent implements OnInit {
+  user:User;
+  repos=[];
 
-  constructor() { }
-
+  show = false;
+  constructor(private infoService:InfoRequestService) { }
+  showRepo(){
+    this.show=true;
+  }
   ngOnInit() {
+   
+    this.infoService.infoRequest("anumasif");
+    this.user=this.infoService.user;
+
+    this.infoService.repoRequest("anumasif");
+    this.repos=this.infoService.repos;
   }
 
 }
