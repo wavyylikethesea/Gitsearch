@@ -1,12 +1,12 @@
 import { TestBed } from '@angular/core/testing';
 
-import { InfoHttpService } from './info-http.service';
+import { InfoRequestService } from './info-request.service';
 
-describe('InfoHttpService', () => {
+describe('InfoRequestService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
 
   it('should be created', () => {
-    const service: InfoHttpService = TestBed.get(InfoHttpService);
+    const service: InfoRequestService = TestBed.get(InfoRequestService);
     expect(service).toBeTruthy();
   });
 });

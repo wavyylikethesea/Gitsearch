@@ -31,8 +31,7 @@ import { DateOfCreationPipe } from './date-of-creation.pipe';
     NgProgressHttpModule,
     RoutingModule,
     FormsModule
-  ],// background-color: white;
-// font-weight: bold;
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
