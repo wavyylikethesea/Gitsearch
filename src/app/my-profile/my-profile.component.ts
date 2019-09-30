@@ -7,7 +7,7 @@ import {InfoRequestService} from '../info-http/info-request.service';
   selector: 'app-myprofile',
   templateUrl: './myprofile.component.html',
   providers:[InfoRequestService],
-  styleUrls: ['./myprofile.component.css']
+  styleUrls: ['./my-profile.component.css']
 })
 export class MyprofileComponent implements OnInit {
   user:User;
