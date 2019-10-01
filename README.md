@@ -38,13 +38,11 @@ To fix a bug or enhance an existing module, follow these steps:
 - Create a Pull Request 
 ## Known Bugs
 If you find a bug, or you'd like to request a new function, kindly contact me and include your search query and the expected result.
-
- 
 ## Technologies Used
 - This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.4.
 - [Bootstrap library](https://www.w3schools.com/bootstrap/bootstrap_get_started.asp) - Bootstrap is a free front-end framework for faster and easier web development. It includes HTML and CSS based design templates for typography, forms, buttons, tables, navigation, modals, image carousels and many other, as well as optional JavaScript plugins. It also gives you the ability to easily create responsive designs
 ## Link to my live site on GitHub Pages
-- [Quotes](https://wavyylikethesea.github.io/gitSearch/)
+- [gitSearch](https://wavyylikethesea.github.io/gitSearch/)
 ## Support and contact details
 Please feel free to contact me if you have any suggestion for me to improve this website.
 - Email: wavyylikethesea@gmail.com

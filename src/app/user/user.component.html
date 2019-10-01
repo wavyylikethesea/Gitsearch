@@ -6,13 +6,13 @@
       <div class="col-md-6">
         <h1>Search User</h1>
         <div class="form-group">
-          <label for="name">Name</label>
+          <label for="name">Name:</label>
           <input type="text" class="form-control" id="name" [(ngModel)]="userName" name="name" #name="ngModel" required>
           <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
             <p> Name is Required</p>
           </div>
         </div>
-        <button type="Submit" class="btn btn-success btn-lg" (click)=showUser() [disabled]="userName==''">SEARCH</button>
+        <button type="Submit" class="btn btn-primary btn-lg" (click)=showUser() [disabled]="userName==''">SEARCH</button>
         <div class="row hidden" *ngIf="show == true">
           <div class="row" id="center">
             <div class="col-md-6">
@@ -24,7 +24,7 @@
               <h4>Following:{{user?.following}}</h4>
               <h4 appBold>Repositories:{{user?.repositories}}</h4>
               <h4>CREATED:</h4>
-              <button class="btn btn-primary btn-lg" (click)="showRepo()" type="button" name="button">View Repos</button>
+              <button class="btn btn-danger btn-lg" (click)="showRepo()" type="button" name="button">View Repos</button>
             </div>
           </div>
       </div>

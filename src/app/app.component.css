@@ -6,7 +6,7 @@
   #github{
     width:500px;
     height:80px;
-    /* margin-top:-15px;  */
+
   }
   #logo{
     width:80px;
@@ -15,7 +15,7 @@
   }
   .link{
     display:inline;
-    background-color: grey;
+    background-color:green;
     margin-left: 30px;
     border-radius: 10px;
     padding:10px 10px 10px 10px;
@@ -23,4 +23,4 @@
   a{
     color:white;
   }
-  
+ 
